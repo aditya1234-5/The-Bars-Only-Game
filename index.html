@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link  rel="icon" href="logo-removebg-preview.png">
+    <title>The Bars Only</title>
+    
+    <link rel="stylesheet" href="bars.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <div class="warning">To Play , <br> Open it on Laptop!! 💀</div>
+   
+  <div class="landing-page">
+    <p class="logo">The Bars Only</p>
+
+    <div class="row text-center justify-content-evenly" style=" margin-top: -20px;">
+     <div class=" easy col-sm-5 col-md-3 col-xl-3 mb-3" style=" margin-top: 10%;">Easy
+       <button type="button" class="btn btn-success" class="easy" >Play /></button>
+     
+     </div>
+     <div class="medium col-sm-5 col-md-3 col-xl-3 mb-3 " style=" margin-top: 10%">Medium
+       <button type="button" class="btn btn-primary"  class="medium" >Play /></button>
+     </div>
+     <div class="hard col-sm-5 col-md-3 col-xl-3 mb-3" style=" margin-top: 10%;">Hard
+       <button type="button" class="btn btn-danger"  class="hard">Play /></button>
+     </div>
+   </div>
+  </div>
+
+
+
+  <script>
+     let easy_btn = document.querySelector(".easy");
+     let medium = document.querySelector(".medium");
+     let hard_btn = document.querySelector(".hard");
+
+
+    easy_btn.addEventListener('click',function(){
+      window.open('./levels.html',"_self");
+    })
+    medium.addEventListener('click',function(){
+      window.open('./level2.html',"_self");
+    });
+    hard_btn.addEventListener('click',function(){
+      window.open('./level3.html',"_self");
+      
+    });
+  </script>
+</body>
+</html>
